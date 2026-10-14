@@ -1,0 +1,70 @@
+<p>While Loops</p>
+<?php       
+    $x = 0;
+    while($x <= 10) 
+        {
+        echo $x. "<br>";
+    $x++;
+    if($x==6)
+        {
+            break;
+
+        } 
+    }
+
+?>
+
+<p>Do while</p>
+<?php
+
+            $y = 0;
+            do{
+                echo $y . "<br>";
+                 $y++;
+                 if($y==6)
+                    {
+                        break;
+                    }
+                }
+                while($y <= 10 )
+
+
+
+?>
+
+<p>For loops</p>
+
+    <?php
+			for($z=0;$z<=10;$z++)
+			{
+				echo 'Numeri eshte: ' . $z . '<br>';
+				if($z==6)
+				{
+					continue; //e nderpret loop edhe nese nuk ka perfundue ende.
+				}
+			}
+		?>
+
+
+<p>Foreach loops</p>
+
+    <?php   
+            $txt = array(1,28,3,4,5,67,69,34);
+            sort($txt);
+            foreach($txt as $x)
+                {
+                    echo "$x <br>";
+                }
+    ?>
+
+    <br>
+
+<?php       
+    $text = array(2,3,4,54,43,56,654,3);
+    sort($text);
+    $txt = count($text);
+    for($x; $x<$txt; $x++)
+        {
+            echo $text[$x]. '<br>';
+        }
+        ?>
